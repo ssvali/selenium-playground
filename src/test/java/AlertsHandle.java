@@ -35,6 +35,14 @@ public class AlertsHandle {
         driver.switchTo().alert().accept();
     }
 
+    @Test
+    void alertGetText(){
+        driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
+        String alertText = driver.switchTo().alert().getText();
+        System.out.println("Alert text is: " + alertText);
+        driver.switchTo().alert().accept();
+    }
+
     @AfterTest
     void tearDown(){
         driver.quit();
