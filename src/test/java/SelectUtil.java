@@ -6,6 +6,23 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+/*
+        	Drop down will have the tag as “Select.”
+        	To select a particular value from the list we have to use select class.
+        	This method takes the WebElement from which a value has to be selected as an argument.
+        	We can select values using any of the following methods in select class
+            1. selectByVisibleText()
+            2. selectByIndex()
+            3. selectByValue()
+        	Use these methods multiple times for multi select drop down
+        	We can perform more operations than just selecting values using select class.
+                	To deselect the selected values we have to use any one of the deselect methods.
+        	To get all the content of the drop down use getoptions() method which returns a list of webelements.
+                	Use getText() method to retrieve all the content.
+                	To get the selected option use getFirstSelectedOption() method.
+ */
+
+
 public class SelectUtil {
 
     WebDriver driver;
